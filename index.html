@@ -29,7 +29,7 @@
     </nav>
     <nav>
       <p>CONTENIDO</p>
-      <details open>
+      <details>
         <summary>Setup</summary>
         <ol>
           <li>
@@ -234,15 +234,22 @@
     </li>
   </ul>
   <script>
-    const $detailsList = document.querySelectorAll("details");
-    console.log($detailsList);
-    $detailsList.forEach(($details) => {
-      $details.querySelector("summary").addEventListener("click", expand);
+    const detailsList = document.querySelectorAll("details");
+
+    detailsList.forEach((details) => {
+      const summary = details.querySelector("summary");
+
+      summary.addEventListener("click", () => {
+        expand(details);
+      });
     });
 
-    function expand() {
-      $detailsList.forEach(($details) => {
-        $details.removeAttribute("open");
+    function expand(clickedDetails) {
+      detailsList.forEach((details) => {
+        if (details !== clickedDetails) {
+          // Cierra todos los detalles excepto el clicado
+          details.removeAttribute("open");
+        }
       });
     }
   </script>
