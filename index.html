@@ -16,6 +16,49 @@
 </head>
 
 <body>
+  <header>
+    <nav class="versions">
+      <p>VARIANTES DEL PROYECTO</p>
+      <ul>
+        <li><a href="./versions/nemium-A.html">Nemium A</a></li>
+        <li><a href="/">Nemium B</a></li>
+        <li><a href="./versions/nemium-C.html">Nemium C</a></li>
+        <li><a href="./versions/nemium-D.html">Nemium D</a></li>
+        <li><a href="./versions/nemium-E.html">Nemium E</a></li>
+      </ul>
+    </nav>
+    <nav>
+      <p>CONTENIDO</p>
+      <details open>
+        <summary>Setup</summary>
+        <ol>
+          <li>
+            <a href="#chrome"> Google Chrome </a>
+          </li>
+          <li>
+            <a href="#vsc"> Visual Studio Code </a>
+          </li>
+          <li>
+            <a href="#figma"> Figma </a>
+          </li>
+          <li>
+            <a href="#github"> GitHub </a>
+          </li>
+        </ol>
+      </details>
+      <details>
+        <summary>Conceptos esenciales del desarrollo Web</summary>
+        <ol>
+          <li><a href="#html">Qué es HTML</a></li>
+          <li><a href="#etiquetas">Etiquetas</a></li>
+          <li><a href="#dom">DOM</a></li>
+          <li><a href="#semantica">Semántica</a></li>
+          <li><a href="#atributos">Atributos</a></li>
+          <li><a href="#css">Qué es CSS</a></li>
+        </ol>
+      </details>
+    </nav>
+  </header>
   <h1>Curso esencial de HTML y CSS</h1>
   <p>
     Este es el inicio de tu carrera como Desarrollador Web, empezarás
@@ -190,6 +233,19 @@
       padding-block-end | padding-inline-start | padding-inline-end
     </li>
   </ul>
+  <script>
+    const $detailsList = document.querySelectorAll("details");
+    console.log($detailsList);
+    $detailsList.forEach(($details) => {
+      $details.querySelector("summary").addEventListener("click", expand);
+    });
+
+    function expand() {
+      $detailsList.forEach(($details) => {
+        $details.removeAttribute("open");
+      });
+    }
+  </script>
 </body>
 
 </html>
