@@ -3,15 +3,11 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Nunito:wght@400;600;700&family=Roboto:wght@400;500;700&family=Rubik:wght@400;500;700&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Nunito:wght@400;600;700&family=Roboto:wght@400;500;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./css/index.css" />
-  <!--   <link rel="stylesheet" href="./css/fonts.css" /> -->
   <title>Nemium</title>
 </head>
 
@@ -31,7 +27,7 @@
       <p>CONTENIDO</p>
       <details>
         <summary>Setup</summary>
-        <ol>
+        <ol type="I">
           <li>
             <a href="#chrome"> Google Chrome </a>
           </li>
@@ -235,6 +231,10 @@
   </ul>
   <script>
 
+/* El fragmento de código que proporcionó selecciona todo `<details> `elementos en el documento usando
+`document.querySelectorAll(&quot;detalles&quot;)`. Luego, itera sobre cada `<details> ` elemento
+usando el método `forEach()` y para cada `<details> ` elemento, encuentra el `<summary> `elemento
+dentro de él usando `querySelector(&quot;summary&quot;)`. */
     const detailsList = document.querySelectorAll("details");
     detailsList.forEach((details) => {
       const summary = details.querySelector("summary");
@@ -243,6 +243,8 @@
       });
     });
 
+/* Esta función `expandir(clickedDetails)` está diseñada para cerrar todos `<details> `elementos
+excepto aquel en el que se hizo clic. */
     function expand(clickedDetails) {
       detailsList.forEach((details) => {
         if (details !== clickedDetails) {

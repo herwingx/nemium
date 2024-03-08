@@ -13,3 +13,22 @@ body {
 h1{
   color: var(--black);
 }
+
+ol li::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  rotate: 45deg;
+  opacity: .8;
+}
+
+ol li {
+  list-style: none;
+}
+
+ol li a {
+  margin-left: 10px;
+}
