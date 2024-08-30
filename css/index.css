@@ -1,8 +1,7 @@
-
-:root { 
-  --white: #ffffff; 
-  --grey: #808080; 
-  --black: #212429; 
+:root {
+  --white: #ffffff;
+  --grey: #808080;
+  --black: #212429;
   --yellow: #FEC62E;
 }
 
@@ -10,7 +9,12 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-h1{
+.hero {
+  background-image: linear-gradient(to top,rgba(255, 255, 255, .2), transparent), url(../images/patron-1.png);
+  height: 350px;
+}
+
+h1 {
   color: var(--black);
 }
 
