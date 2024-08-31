@@ -18,6 +18,18 @@ h1 {
   color: var(--black);
 }
 
+h3:before {
+  content: "";
+}
+
+h3::after {
+  display: block;
+  content: "";
+  width: 32px;
+  height: 4px;
+  background-color: var(--black);
+}
+
 ol li::before {
   content: "";
   display: inline-block;
