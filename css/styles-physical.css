@@ -52,6 +52,7 @@ pre {
 blockquote {
   padding-left: 16px;
   margin: 32px 0;
+  border-left: 4px solid var(--black);
 }
 
 blockquote span::before {
