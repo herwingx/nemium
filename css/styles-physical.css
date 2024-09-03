@@ -41,9 +41,21 @@ hr {
   margin: 64px 0;
   /*  */
 }
+
+pre {
+  background: #FEC62E;
+  padding: 40px;
+  font-family: "Roboto";
+  line-height: 24px;
+}
  
 blockquote {
+  padding-left: 16px;
   margin: 32px 0;
+}
+
+blockquote span::before {
+  content: "-";
 } 
 
 .section-content {
@@ -68,10 +80,11 @@ blockquote {
 
 .section-content h3 {
   counter-increment: titleList;
+  padding-bottom: 4px;
 }
 
 .section-content h3:before {
-  content: counter(titleList);
+  content: counter(titleList, decimal) ". ";
 }
 
 .section-content h3::after {
