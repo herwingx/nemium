@@ -1,12 +1,61 @@
 :root {
-  --white: #ffffff; 
-  --grey30: #212121; 
-  --grey20: #212429; 
-  --grey10: #616161; 
+  --white: #ffffff;
+  --grey30: #212121;
+  --grey20: #212429;
+  --grey10: #616161;
   --yellow: #FEC62E;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: var(--gray30);
+}
+
+header {
+  position: absolute;
+  top: 64px;
+  left: -232px;
+  color: var(--gray10);
+  font-size: 14px;
+  width: 188px;
+}
+
+header li {
+  margin-bottom: 16px;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+}
+
+header a {
+  color: var(--gray10);
+  text-decoration: none;
+}
+
+header a:hover {
+  color: var(--gray30);
+}
+
+nav details summary {
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.header-content {
+  position: relative;
+}
+
+.versions>p {
+  margin-top: 8px;
+}
+
 .main {
+
   /* background-color: purple; */
 }
 
@@ -16,8 +65,7 @@
 }
 
 .main-content {
-padding: 20px;
-/* background-color: red; */
+  background-color: white;
 }
 
 body {
@@ -26,17 +74,19 @@ body {
 }
 
 .hero {
-  background-image: linear-gradient(to top,rgba(255, 255, 255, .2), transparent), url(../images/patron-1.png);
+  background-image: linear-gradient(to top, rgba(255, 255, 255, .2), transparent), url(../images/patron-1.png);
   height: 350px;
 }
 
 h1 {
+  font-size: 64px;
   margin-top: 64px;
   margin-bottom: 14px;
   color: var(--black);
+  font-weight: normal;
 }
 
-h1 + p {
+h1+p {
   margin-bottom: 64px;
 }
 
@@ -50,6 +100,9 @@ h3 {
   margin-top: 16px;
   margin-bottom: 24px;
   font-weight: normal;
+  position: sticky;
+  top: 0;
+  background-color: white;
 }
 
 hr {
@@ -63,7 +116,7 @@ pre {
   font-family: "Roboto";
   line-height: 24px;
 }
- 
+
 blockquote {
   padding-left: 16px;
   margin: 32px 0;
@@ -72,7 +125,7 @@ blockquote {
 
 blockquote span::before {
   content: "-";
-} 
+}
 
 .section-content {
   margin-top: 164px;
@@ -86,7 +139,7 @@ blockquote span::before {
   counter-reset: titleList;
 }
 
-.section-content + hr {
+.section-content+hr {
   display: none;
 }
 
@@ -96,7 +149,7 @@ blockquote span::before {
 
 .section-content h3 {
   counter-increment: titleList;
-  padding-bottom: 4px;
+  padding-bottom: 8px;
 }
 
 .section-content h3:before {
@@ -104,11 +157,14 @@ blockquote span::before {
 }
 
 .section-content h3::after {
-  display: block;
+  display: inline-block;
   content: "";
-  width: 32px;
+  width: 80px;
   height: 4px;
-  background-color: var(--black);
+  background-color: var(--grey30);
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .section-content ol li {
