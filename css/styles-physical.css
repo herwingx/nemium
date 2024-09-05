@@ -11,7 +11,7 @@ html {
 }
 
 a {
-  color: var(--gray30);
+  color: var(--grey30);
 }
 
 header {
@@ -176,21 +176,15 @@ blockquote span::before {
   margin-bottom: 16px;
 }
 
-ol li::before {
-  content: "";
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  border-top: 2px solid currentColor;
-  border-right: 2px solid currentColor;
-  rotate: 45deg;
-  opacity: .8;
-}
-
-ol li {
-  list-style: none;
+nav ol {
+  padding-left: 16px;
 }
 
 ol li a {
   margin-left: 10px;
+}
+
+nav ul {
+  padding-left: 0;
+  list-style: none;
 }
