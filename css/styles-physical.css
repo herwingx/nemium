@@ -10,15 +10,20 @@ html {
   scroll-behavior: smooth;
 }
 
-a {
-  color: var(--grey30);
+.header {
+  position: sticky;
+  top: 0;
+}
+
+.header-content {
+  position: relative;
 }
 
 header {
   position: absolute;
   top: 64px;
   left: -232px;
-  color: var(--gray10);
+  color: var(--grey10);
   font-size: 14px;
   width: 188px;
 }
@@ -27,18 +32,14 @@ header li {
   margin-bottom: 16px;
 }
 
-.header {
-  position: sticky;
-  top: 0;
-}
 
 header a {
-  color: var(--gray10);
+  color: var(--grey10);
   text-decoration: none;
 }
 
 header a:hover {
-  color: var(--gray30);
+  color: var(--grey30);
 }
 
 nav details summary {
@@ -46,8 +47,21 @@ nav details summary {
   line-height: 24px;
 }
 
-.header-content {
-  position: relative;
+nav ol {
+  padding-left: 16px;
+}
+
+nav li a {
+  margin-left: 10px;
+}
+
+nav ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.versions {
+  margin-bottom: 128px;
 }
 
 .versions>p {
@@ -122,15 +136,12 @@ blockquote span::before {
   content: "-";
 }
 
-.section-content {
-  margin-top: 164px;
-}
-
 .section-content:first-of-type {
   margin: 0;
 }
 
 .section-content {
+  margin-top: 164px;
   counter-reset: titleList;
 }
 
@@ -143,6 +154,7 @@ blockquote span::before {
 }
 
 .section-content h3 {
+  position: sticky;
   counter-increment: titleList;
   padding-bottom: 8px;
 }
@@ -162,24 +174,23 @@ blockquote span::before {
   bottom: 0;
 }
 
+.section-content:last-of-type h3::after {
+  all:initial;
+}
+
+.section-content:last-of-type h3:before {
+  all:initial;
+}
+
+.section-content ol, .section-content ul {
+  padding-left: 16px;
+}
+
 .section-content ol li {
-  line-height: 24px;
+  margin-bottom: 16px;
 }
 
 
 .section-content ul li {
   margin-bottom: 16px;
-}
-
-nav ol {
-  padding-left: 16px;
-}
-
-ol li a {
-  margin-left: 10px;
-}
-
-nav ul {
-  padding-left: 0;
-  list-style: none;
 }
