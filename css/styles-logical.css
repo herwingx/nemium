@@ -1,0 +1,188 @@
+:root {
+  font-size: 17px;
+  --white30: white;
+  --white20: #a5a3a5;
+  --white10: #3a3539;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: var(--white30);
+}
+
+header {
+  position: absolute;
+  inset-block-start: 64px; /* Equivalente a top */
+  inset-inline-start: -232px; /* Equivalente a left */
+  color: var(--white30);
+  font-size: 14px;
+  inline-size: 188px; /* Equivalente a width */
+}
+
+header li {
+  color: var(--white30);
+  margin-block-end: 16px; /* Equivalente a margin-bottom */
+}
+
+.header {
+  position: sticky;
+  inset-block-start: 0; /* Equivalente a top */
+}
+
+header p {
+  color: var(--white30);
+}
+
+header a {
+  color: var(--white30);
+  text-decoration: none;
+}
+
+header a:hover {
+  color: var(--white30);
+}
+
+nav details summary {
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.header-content {
+  position: relative;
+}
+
+.versions>p {
+  margin-block-start: 8px; /* Equivalente a margin-top */
+}
+
+.wrapper {
+  inline-size: 902px; /* Equivalente a width */
+  margin: auto;
+}
+
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  background-color: #251f24;
+}
+
+.hero {
+  background-image: linear-gradient(96.07deg, #314755 30.63%, #26a0da 102.18%);
+  block-size: 350px; /* Equivalente a height */
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+  color: var(--white30);
+}
+
+h1 {
+  font-size: 64px;
+  margin-block-start: 64px; /* Equivalente a margin-top */
+  margin-block-end: 14px; /* Equivalente a margin-bottom */
+  color: var(--white30);
+}
+
+p {
+  color: var(--white20);
+}
+
+h1+p {
+  margin-block-end: 64px; /* Equivalente a margin-bottom */
+}
+
+h2 {
+  font-size: 2em;
+  margin-block: 64px 40px; /* Equivalente a margin: 64px 0 40px */
+}
+
+h3 {
+  background-color: #251f24;
+  margin-block-start: 16px; /* Equivalente a margin-top */
+  margin-block-end: 24px; /* Equivalente a margin-bottom */
+  position: sticky;
+  inset-block-start: 0; /* Equivalente a top */
+}
+
+hr {
+  border: 1px solid var(--white10);
+  margin-block: 64px 0; /* Equivalente a margin: 64px 0 */
+}
+
+pre {
+  color: var(--white30);
+  background: var(--white10);
+  padding-block: 40px; /* Equivalente a padding: 40px */
+  font-family: "Nunito";
+  line-height: 24px;
+}
+
+blockquote {
+  padding-inline-start: 16px; /* Equivalente a padding-left */
+  margin-block: 32px 0; /* Equivalente a margin: 32px 0 */
+  border-inline-start: 4px solid var(--black); /* Equivalente a border-left */
+}
+
+blockquote span::before {
+  content: "-";
+}
+
+.section-content {
+  margin-block-start: 164px; /* Equivalente a margin-top */
+}
+
+.section-content:first-of-type {
+  margin-block-start: 0; /* Equivalente a margin: 0 */
+}
+
+.section-content {
+  counter-reset: titleList;
+}
+
+.section-content+hr {
+  display: none;
+}
+
+.section-content img {
+  margin-block-start: 40px; /* Equivalente a margin-top */
+}
+
+.section-content h3 {
+  counter-increment: titleList;
+  padding-block-end: 8px; /* Equivalente a padding-bottom */
+}
+
+.section-content h3:before {
+  content: counter(titleList, decimal) ". ";
+}
+
+.section-content ol li {
+  margin-block-end: 1rem; /* Equivalente a margin-bottom */
+  line-height: 24px;
+  color: var(--white20);
+}
+
+.section-content ul li {
+  color: var(--white20);
+  margin-block-end: 16px; /* Equivalente a margin-bottom */
+}
+
+.section-content ul, .section-content ol {
+  padding-inline-start: 16px; /* Equivalente a padding-left */
+}
+
+nav ol {
+  padding-inline-start: 16px; /* Equivalente a padding-left */
+}
+
+ol li a {
+  margin-inline-start: 10px; /* Equivalente a margin-left */
+}
+
+nav ul {
+  padding-inline-start: 0; /* Equivalente a padding-left */
+  list-style: none;
+}
