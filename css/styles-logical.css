@@ -15,26 +15,27 @@ a {
 
 header {
   position: absolute;
-  top: 64px;
-  left: -232px;
+  inset-block-start: 64px; /* Equivalente a top */
+  inset-inline-start: -232px; /* Equivalente a left */
   color: var(--white30);
   font-size: 14px;
-  width: 188px;
+  inline-size: 188px; /* Equivalente a width */
 }
 
 header li {
   color: var(--white30);
-  margin-bottom: 16px;
+  margin-block-end: 16px; /* Equivalente a margin-bottom */
 }
 
 .header {
   position: sticky;
-  top: 0;
+  inset-block-start: 0; /* Equivalente a top */
 }
 
 header p {
   color: var(--white30);
 }
+
 header a {
   color: var(--white30);
   text-decoration: none;
@@ -54,14 +55,13 @@ nav details summary {
 }
 
 .versions>p {
-  margin-top: 8px;
+  margin-block-start: 8px; /* Equivalente a margin-top */
 }
 
 .wrapper {
-  width: 902px;
+  inline-size: 902px; /* Equivalente a width */
   margin: auto;
 }
-
 
 body {
   margin: 0;
@@ -71,7 +71,7 @@ body {
 
 .hero {
   background-image: linear-gradient(96.07deg, #314755 30.63%, #26a0da 102.18%);
-  height: 350px;
+  block-size: 350px; /* Equivalente a height */
 }
 
 h1, h2, h3 {
@@ -81,8 +81,8 @@ h1, h2, h3 {
 
 h1 {
   font-size: 64px;
-  margin-top: 64px;
-  margin-bottom: 14px;
+  margin-block-start: 64px; /* Equivalente a margin-top */
+  margin-block-end: 14px; /* Equivalente a margin-bottom */
   color: var(--white30);
 }
 
@@ -91,38 +91,39 @@ p {
 }
 
 h1+p {
-  margin-bottom: 64px;
+  margin-block-end: 64px; /* Equivalente a margin-bottom */
 }
 
 h2 {
   font-size: 2em;
-  margin: 64px 0 40px;
+  margin-block: 64px 40px; /* Equivalente a margin: 64px 0 40px */
 }
 
 h3 {
   background-color: #251f24;
-  margin-top: 16px;
-  margin-bottom: 24px;
+  margin-block-start: 16px; /* Equivalente a margin-top */
+  margin-block-end: 24px; /* Equivalente a margin-bottom */
   position: sticky;
-  top: 0;
+  inset-block-start: 0; /* Equivalente a top */
 }
 
 hr {
-  margin: 64px 0;
+  border: 1px solid var(--white10);
+  margin-block: 64px 0; /* Equivalente a margin: 64px 0 */
 }
 
 pre {
   color: var(--white30);
   background: var(--white10);
-  padding: 40px;
+  padding-block: 40px; /* Equivalente a padding: 40px */
   font-family: "Nunito";
   line-height: 24px;
 }
 
 blockquote {
-  padding-left: 16px;
-  margin: 32px 0;
-  border-left: 4px solid var(--black);
+  padding-inline-start: 16px; /* Equivalente a padding-left */
+  margin-block: 32px 0; /* Equivalente a margin: 32px 0 */
+  border-inline-start: 4px solid var(--black); /* Equivalente a border-left */
 }
 
 blockquote span::before {
@@ -130,11 +131,11 @@ blockquote span::before {
 }
 
 .section-content {
-  margin-top: 164px;
+  margin-block-start: 164px; /* Equivalente a margin-top */
 }
 
 .section-content:first-of-type {
-  margin: 0;
+  margin-block-start: 0; /* Equivalente a margin: 0 */
 }
 
 .section-content {
@@ -146,12 +147,12 @@ blockquote span::before {
 }
 
 .section-content img {
-  margin-top: 40px;
+  margin-block-start: 40px; /* Equivalente a margin-top */
 }
 
 .section-content h3 {
   counter-increment: titleList;
-  padding-bottom: 8px;
+  padding-block-end: 8px; /* Equivalente a padding-bottom */
 }
 
 .section-content h3:before {
@@ -159,30 +160,29 @@ blockquote span::before {
 }
 
 .section-content ol li {
-  margin-block-end: 1rem;
+  margin-block-end: 1rem; /* Equivalente a margin-bottom */
   line-height: 24px;
   color: var(--white20);
 }
 
-
 .section-content ul li {
   color: var(--white20);
-  margin-bottom: 16px;
+  margin-block-end: 16px; /* Equivalente a margin-bottom */
 }
 
 .section-content ul, .section-content ol {
-  padding-left: 16px;
+  padding-inline-start: 16px; /* Equivalente a padding-left */
 }
 
 nav ol {
-  padding-left: 16px;
+  padding-inline-start: 16px; /* Equivalente a padding-left */
 }
 
 ol li a {
-  margin-left: 10px;
+  margin-inline-start: 10px; /* Equivalente a margin-left */
 }
 
 nav ul {
-  padding-left: 0;
+  padding-inline-start: 0; /* Equivalente a padding-left */
   list-style: none;
 }
