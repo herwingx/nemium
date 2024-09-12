@@ -15,21 +15,26 @@ a {
 
 header {
   position: absolute;
-  inset-block-start: 64px; /* Equivalente a top */
-  inset-inline-start: -232px; /* Equivalente a left */
+  inset-block-start: 64px;
+  /* Equivalente a top */
+  inset-inline-start: -232px;
+  /* Equivalente a left */
   color: var(--white30);
   font-size: 14px;
-  inline-size: 188px; /* Equivalente a width */
+  inline-size: 188px;
+  /* Equivalente a width */
 }
 
 header li {
   color: var(--white30);
-  margin-block-end: 16px; /* Equivalente a margin-bottom */
+  margin-block-end: 16px;
+  /* Equivalente a margin-bottom */
 }
 
 .header {
   position: sticky;
-  inset-block-start: 0; /* Equivalente a top */
+  inset-block-start: 0;
+  /* Equivalente a top */
 }
 
 header p {
@@ -55,11 +60,13 @@ nav details summary {
 }
 
 .versions>p {
-  margin-block-start: 8px; /* Equivalente a margin-top */
+  margin-block-start: 8px;
+  /* Equivalente a margin-top */
 }
 
 .wrapper {
-  inline-size: 902px; /* Equivalente a width */
+  inline-size: 902px;
+  /* Equivalente a width */
   margin: auto;
 }
 
@@ -71,18 +78,22 @@ body {
 
 .hero {
   background-image: linear-gradient(96.07deg, #314755 30.63%, #26a0da 102.18%);
-  block-size: 350px; /* Equivalente a height */
+  block-size: 350px;
+  /* Equivalente a height */
 }
 
-h1, h2 {
+h1,
+h2 {
   font-weight: bold;
   color: var(--white30);
 }
 
 h1 {
   font-size: 64px;
-  margin-block-start: 64px; /* Equivalente a margin-top */
-  margin-block-end: 14px; /* Equivalente a margin-bottom */
+  margin-block-start: 64px;
+  /* Equivalente a margin-top */
+  margin-block-end: 14px;
+  /* Equivalente a margin-bottom */
   color: var(--white30);
 }
 
@@ -92,12 +103,14 @@ p {
 }
 
 h1+p {
-  margin-block-end: 40px; /* Equivalente a margin-bottom */
+  margin-block-end: 40px;
+  /* Equivalente a margin-bottom */
 }
 
 h2 {
   font-size: 40px;
-  margin-block: 40px 40px; /* Equivalente a margin: 64px 0 40px */
+  margin-block: 40px 40px;
+  /* Equivalente a margin: 64px 0 40px */
 }
 
 h3 {
@@ -105,10 +118,13 @@ h3 {
   font-size: 32px;
   color: var(--white30);
   background-color: #251f24;
-  margin-block-start: 16px; /* Equivalente a margin-top */
-  margin-block-end: 16px; /* Equivalente a margin-bottom */
+  margin-block-start: 16px;
+  /* Equivalente a margin-top */
+  margin-block-end: 16px;
+  /* Equivalente a margin-bottom */
   position: sticky;
-  inset-block-start: 0; /* Equivalente a top */
+  inset-block-start: 0;
+  /* Equivalente a top */
 }
 
 hr {
@@ -119,22 +135,25 @@ pre {
   border-radius: 8px;
   color: var(--white30);
   background: var(--white10);
-  padding-block: 40px; /* Equivalente a padding: 40px */
+  padding-block: 40px;
+  /* Equivalente a padding: 40px */
   font-family: "Nunito";
   line-height: 24px;
 }
 
 blockquote {
   font-size: 24px;
-  padding-inline: 24px; /* Equivalente a padding-left */
+  padding-inline: 24px;
+  /* Equivalente a padding-left */
   padding-block: 24px;
-  margin-block: 32px 0; /* Equivalente a margin: 32px 0 */
+  margin-block: 32px 0;
+  /* Equivalente a margin: 32px 0 */
   background-color: var(--white10);
   border-radius: 8px;
   margin-inline-start: 0;
 }
 
-blockquote > p {
+blockquote>p {
   color: var(--white30);
 }
 
@@ -143,11 +162,13 @@ blockquote span::before {
 }
 
 .section-content {
-  margin-block-start: 164px; /* Equivalente a margin-top */
+  margin-block-start: 120px;
+  /* Equivalente a margin-top */
 }
 
 .section-content:first-of-type {
-  margin-block-start: 0; /* Equivalente a margin: 0 */
+  margin-block-start: 0;
+  /* Equivalente a margin: 0 */
 }
 
 .section-content {
@@ -160,42 +181,88 @@ blockquote span::before {
 
 .section-content img {
   display: block;
-  margin-block-start: 40px; /* Equivalente a margin-top */
+  margin-block-start: 40px;
+  /* Equivalente a margin-top */
 }
 
 .section-content h3 {
   counter-increment: titleList;
-  padding-block-end: 8px; /* Equivalente a padding-bottom */
+  padding-block-end: 8px;
+  /* Equivalente a padding-bottom */
 }
 
-.section-content h3:before {
+.section-content h3::before {
   content: counter(titleList, decimal) ". ";
 }
 
+.section-content:nth-of-type(n+2) h3::before {
+  all: initial;
+}
+
 .section-content ol li {
-  margin-block-end: 1rem; /* Equivalente a margin-bottom */
+  margin-block-end: 1rem;
+  /* Equivalente a margin-bottom */
   line-height: 24px;
   color: var(--white20);
 }
 
 .section-content ul li {
   color: var(--white20);
-  margin-block-end: 16px; /* Equivalente a margin-bottom */
+  margin-block-end: 16px;
+  /* Equivalente a margin-bottom */
 }
 
-.section-content ul, .section-content ol {
-  padding-inline-start: 16px; /* Equivalente a padding-left */
+.section-content ul,
+.section-content ol {
+  padding-inline-start: 16px;
+  /* Equivalente a padding-left */
 }
 
 nav ol {
-  padding-inline-start: 16px; /* Equivalente a padding-left */
+  padding-inline-start: 16px;
+  /* Equivalente a padding-left */
 }
 
 ol li a {
-  margin-inline-start: 10px; /* Equivalente a margin-left */
+  margin-inline-start: 10px;
+  /* Equivalente a margin-left */
 }
 
 nav ul {
-  padding-inline-start: 0; /* Equivalente a padding-left */
+  padding-inline-start: 0;
+  /* Equivalente a padding-left */
   list-style: none;
+}
+
+.slider-container {
+  /* block-size: 100px; */
+  /*   border: 1px solid blue; */
+  display: block;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  font-size: 0;
+}
+
+.video {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  /* border: 1px solid purple; */
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+.slider-bullet-list {
+  margin-block-start: 10px;
+  text-align: center;
+}
+
+.slider-bullet {
+  display: inline-block;
+  inline-size: 16px;
+  block-size: 16px;
+  background: white;
+  border-radius: 50%;
+  margin-inline-end: 8px;
 }
