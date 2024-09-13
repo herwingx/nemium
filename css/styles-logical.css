@@ -1,5 +1,5 @@
 :root {
-  font-size: 1rem;
+  font-size: 16px;
   --white30: white;
   --white20: #a5a3a5;
   --white10: #3a3539;
@@ -15,33 +15,21 @@ body {
   background-color: #251f24;
 }
 
-a {
+header {
   color: var(--white30);
+  font-size: 0.875rem;
+}
+
+header nav a {
+  color: var(--white20);
   text-decoration: none;
 }
 
-header {
-  position: absolute;
-  inset-block-start: 4rem;
-  inset-inline-start: -14.5rem;
-  color: var(--white30);
-  font-size: 0.875rem;
-  inline-size: 11.75rem;
-}
-
-header p,
-header a,
-header li {
-  color: var(--white30);
-}
-
-header li {
-  margin-block-end: 1rem;
-}
-
-.header {
-  position: sticky;
-  inset-block-start: 0;
+header ul,
+header ol,
+nav li {
+  color: var(--white20);
+  margin-block: 1rem;
 }
 
 nav details summary {
@@ -53,28 +41,29 @@ nav details summary {
   position: relative;
 }
 
-.versions > p {
+header nav p {
   margin-block-start: 0.5rem;
+  color: var(--white30);
 }
 
 .wrapper {
-  max-inline-size: 56.25rem;
-  margin: auto;
+  padding-inline: 1rem;
 }
 
 .hero {
   background-image: linear-gradient(96.07deg, #314755 30.63%, #26a0da 102.18%);
-  block-size: 21.875rem;
+  block-size: 2.94rem;
 }
 
 h1,
-h2 {
-  font-weight: bold;
+h2,
+h3 {
+  font-weight: 400;
   color: var(--white30);
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 2rem;
   margin-block: 4rem 0.875rem;
 }
 
@@ -83,23 +72,17 @@ p {
   color: var(--white20);
 }
 
-h1 + p {
+h1+p {
   margin-block-end: 2.5rem;
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   margin-block: 2.5rem 2.5rem;
 }
 
 h3 {
-  font-weight: 600;
-  font-size: 2rem;
-  color: var(--white30);
-  background-color: #251f24;
-  margin-block: 1rem;
-  position: sticky;
-  inset-block-start: 0;
+  font-size: 1.25rem;
 }
 
 hr {
@@ -111,21 +94,21 @@ pre {
   border-radius: 0.5rem;
   color: var(--white30);
   background: var(--white10);
-  padding: 2.5rem;
+  padding: 1rem;
   font-family: "Nunito";
   line-height: 1.5rem;
 }
 
 blockquote {
-  font-size: 1.5rem;
-  padding: 1.5rem;
+  font-size: 1rem;
+  padding: 1rem;
   margin: 2rem 0;
   background-color: var(--white10);
   border-radius: 0.5rem;
   margin-inline-start: 0;
 }
 
-blockquote > p {
+blockquote>p {
   color: var(--white30);
 }
 
@@ -142,7 +125,7 @@ blockquote span::before {
   margin-block-start: 0;
 }
 
-.section-content + hr {
+.section-content+hr {
   display: none;
 }
 
@@ -240,4 +223,84 @@ ol li a {
 .form input[type="submit"] {
   background: #157efb;
   border: none;
+}
+
+@media screen and (min-width: 1440px) {
+  header {
+    position: absolute;
+    inset-block-start: 4rem;
+    inset-inline-start: -14.5rem;
+    color: var(--white30);
+    font-size: 0.875rem;
+    inline-size: 11.75rem;
+  }
+
+  header p,
+  header a,
+  header li {
+    color: var(--white30);
+  }
+
+  header li {
+    margin-block-end: 1rem;
+  }
+
+  .header {
+    position: sticky;
+    inset-block-start: 0;
+  }
+
+  .wrapper {
+    max-inline-size: 56.25rem;
+    margin: auto;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(96.07deg, #314755 30.63%, #26a0da 102.18%);
+    block-size: 21.875rem;
+  }
+
+  h1,
+  h2 {
+    font-weight: bold;
+    color: var(--white30);
+  }
+
+  h1 {
+    font-size: 4rem;
+    margin-block: 4rem 0.875rem;
+  }
+
+  h3 {
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--white30);
+    background-color: #251f24;
+    margin-block: 1rem;
+    position: sticky;
+    inset-block-start: 0;
+  }
+
+  pre {
+    overflow: auto;
+    border-radius: 0.5rem;
+    color: var(--white30);
+    background: var(--white10);
+    padding: 2.5rem;
+    font-family: "Nunito";
+    line-height: 1.5rem;
+  }
+  
+  blockquote {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    background-color: var(--white10);
+    border-radius: 0.5rem;
+    margin-inline-start: 0;
+  }
+
 }
