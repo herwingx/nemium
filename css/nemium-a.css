@@ -262,6 +262,24 @@ p>a {
   cursor: pointer;
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  block-size: 10.875rem;
+  background-color: var(--grey20);
+}
+
+.container-footer {
+  text-align: center;
+}
+
+.container-footer p {
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
 @media screen and (min-width: 1440px) {
   header {
     position: absolute;
@@ -287,7 +305,6 @@ p>a {
     max-inline-size: 56.25rem;
     margin: auto;
   }
-
 
 }
 
@@ -362,4 +379,23 @@ p>a {
     inline-size: 49%;
     display: inline-block;
   }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    block-size: 10.875rem;
+    background-color: var(--grey20);
+  }
+  
+  .container-footer {
+    text-align: center;
+  }
+  
+  .container-footer p {
+    font-size: 2rem;
+    color: var(--white);
+  }
+  
 }
