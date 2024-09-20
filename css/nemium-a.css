@@ -267,6 +267,7 @@ p>a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-block-start: 2.5rem;
   block-size: 10.875rem;
   background-color: var(--grey20);
 }
