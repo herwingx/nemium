@@ -207,9 +207,14 @@ nav ul {
   display: inline-block;
   inline-size: 1rem;
   block-size: 1rem;
-  background: white;
+  background: #42424234;
   border-radius: 50%;
   margin-inline-end: 0.5rem;
+}
+
+
+.slider-bullet:hover {
+  background: var(--white30);
 }
 
 .form input {
@@ -232,6 +237,25 @@ nav ul {
 .form input[type="submit"] {
   background: #157efb;
   border: none;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-block-start: 2.5rem;
+  block-size: 10.875rem;
+  background-color: var(--white30);
+}
+
+.container-footer {
+  text-align: center;
+}
+
+.container-footer p {
+  font-size: 1.5rem;
+  color: #000000;
 }
 
 @media screen and (min-width: 1440px) {
@@ -306,6 +330,24 @@ nav ul {
     background-color: var(--white10);
     border-radius: 0.5rem;
     margin-inline-start: 0;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    block-size: 10.875rem;
+    background-color: var(--white30);
+  }
+  
+  .container-footer {
+    text-align: center;
+  }
+  
+  .container-footer p {
+    font-size: 2rem;
+    color: #000000;
   }
 
 }
