@@ -72,11 +72,6 @@
     padding-inline: 1rem;
   }
   
-  .hero {
-    background-image: linear-gradient(to top, rgba(255, 255, 255, .2), transparent), url(../images/patron-1.png);
-    block-size: 2.94rem;
-  }
-  
   h1,
   h2 {
     font-weight: 400;
@@ -310,11 +305,6 @@
   }
   
   @media screen and (min-width: 768px) {
-    .hero {
-      background-image: linear-gradient(to top, rgba(255, 255, 255, .2), transparent), url(../images/patron-1.png);
-      block-size: 21.875rem;
-    }
-  
     h1,
     h2 {
       color: var(--grey30);
