@@ -34,16 +34,18 @@ header nav a {
     text-decoration: none;
 }
 
-header ul,
-header ol,
-nav li {
+header ul {
     color: var(--grey10);
 }
 
 nav details summary {
-    color: var(--grey10);
-    font-weight: 400;
+    color: #000000;
+    font-weight: 600;
     line-height: 1.5rem;
+}
+
+nav details a {
+    color: #000000;
 }
 
 details a:hover {
@@ -88,7 +90,7 @@ h3+p {
 
 h2 {
     font-weight: 400;
-    color: var(--grey10);
+    color: #000000;
 }
 
 h1 {
@@ -113,7 +115,6 @@ h2 {
 
 h3 {
     font-weight: 400;
-    color: var(--grey30);
     font-size: 1.25rem;
 }
 
@@ -175,7 +176,7 @@ blockquote span::before {
 }
 
 .section-content h3 {
-    color: var(--grey10);
+    color: #000000;
     counter-increment: titleList;
     padding-block-end: 0.5rem;
 }
@@ -349,7 +350,6 @@ p>a {
 
     h3 {
         font-size: 2rem;
-        color: var(--grey30);
         background-color: var(--white);
         margin-block: 1rem;
         position: sticky;
